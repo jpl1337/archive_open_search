@@ -1,7 +1,7 @@
 class Page < ApplicationRecord
     belongs_to :document
 
-    after_save : update_document_status!
+    after_save :update_document_status!
     pages = document.pages
     if pages.all? { |page| page.status == "completed"}
         document.update!(status: "completed")
