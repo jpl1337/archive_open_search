@@ -6,6 +6,6 @@ ArchiveOpenSearch is a self-hosted service that ingests and processes National A
 
 Our goal is to unlock the knowledge hidden in archived records by overcoming the barrier of manual reading, empowering researchers, students, and the curious to search our historical archives effortlessly.
 
-Inspired by the 2025 release of John F. Kennedy Assassination Records.
+Inspired by the [2025 release of John F. Kennedy Assassination Records](https://www.archives.gov/research/jfk/release-2025).
 
 This project is in accordance with https://www.archives.gov/robots.txt
