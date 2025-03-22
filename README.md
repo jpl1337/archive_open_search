@@ -1,6 +1,6 @@
 # ArchiveOpenSearch
 ## Ingest National Archive documents and make them searchable.
-
+(WORK IN PROGRESS)
 
 ArchiveOpenSearch is a self-hosted service that ingests and processes National Archive documents—converting them into searchable, structured data accessible through a fast and intuitive search interface.
 
