@@ -1,7 +1,6 @@
 namespace :import do
     desc "Ingest documents from csv with title,source_url"
     task ingest_csv: :environment do
-        require "csv"
 
         csv_path = Rails.root.join("jfk_release_2025.csv")
 
@@ -25,7 +24,6 @@ namespace :import do
                     puts "Imported #{doc.title}"
 
                     # Kick off background processing
-                    # TODO: Finish this before running this task!!
                     DownloadAndSplitJob.perform_later(doc.id)
                 else
                     puts "Failed to save  #{doc.title}:  #{doc.errors.full_messages.join(',')}"
@@ -39,3 +37,5 @@ namespace :import do
         end
 
         puts "Finished importing! Total documents imported: #{count}/#{total_files}"
+    end
+end

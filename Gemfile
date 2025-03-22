@@ -41,7 +41,18 @@ gem "thruster", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
-# These gems are used for web scraping 
+# Used in import_from_csv.rake
+gem "csv"
+
+# Used in DownloadAndSplitJob
+gem "open-uri"
+gem "hexapdf"
+
+# Used in ProcessPageJob
+gem "rtesseract"
+gem "mini_magick"
+
+# Used for web scraping 
 gem "nokogiri"
 gem "httparty"
 
@@ -54,6 +65,10 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+
+  gem "rspec-rails"
+  gem "factory_bot_rails"
+  gem "faker"
 end
 
 group :development do
